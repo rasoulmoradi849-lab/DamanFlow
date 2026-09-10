@@ -1,0 +1,13 @@
+{
+  "name": "DamarFlow",
+  "short_name": "DamarFlow",
+  "description": "Digital Advanced Models for Reactive Flow",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#06111b",
+  "theme_color": "#07131f",
+  "icons": [
+    {"src": "assets/img/favicon-32.png", "sizes": "32x32", "type": "image/png"},
+    {"src": "assets/img/favicon-192.png", "sizes": "192x192", "type": "image/png"}
+  ]
+}
