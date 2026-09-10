@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 560" role="img" aria-labelledby="title desc">
+<title id="title">DamarFlow scientific AI workflow</title>
+<desc id="desc">Simulation inputs flow into reactive transport simulation, training data, a physics-informed neural network, and rapid prediction.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#091a28"/><stop offset="1" stop-color="#06111b"/></linearGradient>
+  <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#55d6e8"/><stop offset="1" stop-color="#24aeca"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#e7c56a"/><stop offset="1" stop-color="#caa64c"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#55d6e8"/></marker>
+</defs>
+<rect width="1400" height="560" rx="28" fill="url(#bg)"/>
+<g opacity=".14" stroke="#91a9b7">
+  <path d="M0 70H1400M0 140H1400M0 210H1400M0 280H1400M0 350H1400M0 420H1400M0 490H1400"/>
+  <path d="M70 0V560M140 0V560M210 0V560M280 0V560M350 0V560M420 0V560M490 0V560M560 0V560M630 0V560M700 0V560M770 0V560M840 0V560M910 0V560M980 0V560M1050 0V560M1120 0V560M1190 0V560M1260 0V560M1330 0V560"/>
+</g>
+<text x="54" y="54" fill="#55d6e8" font-family="monospace" font-size="14" letter-spacing="3">DAMARFLOW / SCIENTIFIC COMPUTING PIPELINE</text>
+
+<!-- cards -->
+<g font-family="Arial, sans-serif">
+  <g transform="translate(45 105)">
+    <rect width="235" height="310" rx="20" fill="#0c1d2b" stroke="#274354"/>
+    <text x="22" y="38" fill="#e7c56a" font-family="monospace" font-size="11">01 · DEFINE</text>
+    <text x="22" y="76" fill="#edf6fa" font-size="23" font-weight="700">Simulation Inputs</text>
+    <g fill="#91a9b7" font-size="14">
+      <text x="22" y="115">Temperature</text><text x="22" y="142">Initial mineralogy</text>
+      <text x="22" y="169">Fluid chemistry</text><text x="22" y="196">2D porous domain</text>
+      <text x="22" y="223">Initial / boundary state</text>
+    </g>
+    <circle cx="190" cy="258" r="32" fill="none" stroke="#55d6e8" opacity=".5"/>
+    <circle cx="190" cy="258" r="9" fill="#55d6e8" filter="url(#glow)"/>
+    <path d="M164 258h52M190 232v52" stroke="#e7c56a" opacity=".5"/>
+  </g>
+
+  <g transform="translate(315 105)">
+    <rect width="235" height="310" rx="20" fill="#0c1d2b" stroke="#274354"/>
+    <text x="22" y="38" fill="#e7c56a" font-family="monospace" font-size="11">02 · SOLVE</text>
+    <text x="22" y="76" fill="#edf6fa" font-size="23" font-weight="700">Reactive Transport</text>
+    <g fill="#91a9b7" font-size="14">
+      <text x="22" y="115">Flow &amp; transport</text><text x="22" y="142">Mineral kinetics</text>
+      <text x="22" y="169">Dissolution / precipitation</text><text x="22" y="196">Reactive chemistry</text>
+    </g>
+    <path d="M25 258 C60 228 85 285 120 252 S180 225 210 260" fill="none" stroke="#55d6e8" stroke-width="3"/>
+    <circle cx="80" cy="250" r="5" fill="#e7c56a"/><circle cx="156" cy="247" r="5" fill="#55d6e8"/>
+  </g>
+
+  <g transform="translate(585 105)">
+    <rect width="235" height="310" rx="20" fill="#0c1d2b" stroke="#274354"/>
+    <text x="22" y="38" fill="#e7c56a" font-family="monospace" font-size="11">03 · LEARN</text>
+    <text x="22" y="76" fill="#edf6fa" font-size="23" font-weight="700">Training Dataset</text>
+    <g fill="#91a9b7" font-size="14">
+      <text x="22" y="115">Surface-area maps</text><text x="22" y="142">Species fields</text>
+      <text x="22" y="169">Multiple temperatures</text><text x="22" y="196">Multiple reaction times</text>
+      <text x="22" y="223">Spatial–temporal samples</text>
+    </g>
+    <g fill="#55d6e8" opacity=".75">
+      <rect x="25" y="251" width="14" height="14" rx="3"/><rect x="45" y="251" width="14" height="14" rx="3"/>
+      <rect x="65" y="251" width="14" height="14" rx="3"/><rect x="85" y="251" width="14" height="14" rx="3"/>
+      <rect x="105" y="251" width="14" height="14" rx="3"/><rect x="125" y="251" width="14" height="14" rx="3"/>
+      <rect x="145" y="251" width="14" height="14" rx="3"/><rect x="165" y="251" width="14" height="14" rx="3"/>
+    </g>
+  </g>
+
+  <g transform="translate(855 105)">
+    <rect width="235" height="310" rx="20" fill="#0c1d2b" stroke="#55d6e8" stroke-opacity=".45"/>
+    <text x="22" y="38" fill="#e7c56a" font-family="monospace" font-size="11">04 · CONSTRAIN</text>
+    <text x="22" y="76" fill="#edf6fa" font-size="23" font-weight="700">Physics AI</text>
+    <text x="22" y="103" fill="#55d6e8" font-family="monospace" font-size="11">PINN / NEURAL OPERATOR</text>
+    <g stroke="#55d6e8" stroke-opacity=".35">
+      <path d="M35 153L80 130M35 153L80 175M35 210L80 175M35 210L80 230M80 130L130 155M80 175L130 155M80 175L130 215M80 230L130 215M130 155L190 185M130 215L190 185"/>
+    </g>
+    <g fill="#55d6e8" filter="url(#glow)">
+      <circle cx="35" cy="153" r="6"/><circle cx="35" cy="210" r="6"/><circle cx="80" cy="130" r="6"/><circle cx="80" cy="175" r="6"/><circle cx="80" cy="230" r="6"/><circle cx="130" cy="155" r="6"/><circle cx="130" cy="215" r="6"/><circle cx="190" cy="185" r="7"/>
+    </g>
+    <text x="22" y="275" fill="#91a9b7" font-size="13">PDE residual · kinetics ·</text>
+    <text x="22" y="296" fill="#91a9b7" font-size="13">equilibrium · conservation</text>
+  </g>
+
+  <g transform="translate(1125 105)">
+    <rect width="230" height="310" rx="20" fill="#0c1d2b" stroke="#274354"/>
+    <text x="22" y="38" fill="#e7c56a" font-family="monospace" font-size="11">05 · PREDICT</text>
+    <text x="22" y="76" fill="#edf6fa" font-size="23" font-weight="700">Rapid Prediction</text>
+    <g fill="#91a9b7" font-size="14">
+      <text x="22" y="115">Mineral surface area</text><text x="22" y="142">Aqueous concentrations</text>
+      <text x="22" y="169">Temperature response</text><text x="22" y="196">Spatial evolution</text>
+    </g>
+    <path d="M25 260 C55 235 76 272 103 247 S155 224 205 252" fill="none" stroke="url(#gold)" stroke-width="3"/>
+    <circle cx="25" cy="260" r="5" fill="#55d6e8"/><circle cx="205" cy="252" r="6" fill="#e7c56a" filter="url(#glow)"/>
+    <text x="22" y="290" fill="#55d6e8" font-family="monospace" font-size="11">FIELD → INSIGHT</text>
+  </g>
+</g>
+
+<g stroke="#55d6e8" stroke-width="2" marker-end="url(#arrow)" opacity=".8">
+  <path d="M282 260H307"/><path d="M552 260H577"/><path d="M822 260H847"/><path d="M1092 260H1117"/>
+</g>
+</svg>
